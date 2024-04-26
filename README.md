@@ -22,17 +22,15 @@
         </ol>
         <pre><code>pip install -r requirements.txt</code></pre>
         <h2>Uso</h2>
-            <li>Para detectar vehículos en un video, ejecuta el siguiente comando:</li>
-        </ol>
-        <pre><code>python detect_vehicle_video.py</code></pre>
-          <li>PD: Para cambiar la ruta del video entra a Deteccion-vehicular.py y modifica el nombre del video hacia la ruta del otro video</li>
-          <br>
         <ol start="3">
             <li>Para iniciar el servidor FastAPI, ejecuta el siguiente comando:</li>
         </ol>
         <pre><code>python API-Prueba.py</code></pre>
+             <li>Para detectar vehículos en un video, ejecuta el siguiente comando:</li>
+        <pre><code>python detect_vehicle_video.py</code></pre>
+          <li>PD: Para cambiar la ruta del video entra a Deteccion-vehicular.py y modifica el nombre del video hacia la ruta del otro video</li>
+          <br>
             <li>Para leer la api puedes entrar al siguiente link:</li>
-        </ol>
         <pre><code>http://localhost:5030/leer</code></pre>
         <h2>Créditos</h2>
         <p>Este proyecto ha sido desarrollado por el Ing. de Sistemas Diego Robertis</a>.</p>
