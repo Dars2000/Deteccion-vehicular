@@ -58,7 +58,7 @@ def detector():
         #     json.dump({"segundos": segundos}, json_file)
         #recibidor_segundos.escribir_segundos(segundos)
         
-        r = requests.post(f"http://localhost:5030/escribir?s={segundos}")
+        r = requests.post(f"http://192.168.95.190:5030/escribir_deteccion1?s={segundos}")
 
         # Mostrar conteo de vehículos cada 10 segundos
         elapsed_time = time.time() - start_time
