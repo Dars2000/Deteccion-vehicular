@@ -30,7 +30,7 @@ def detector():
 
 
     model = torch.hub.load("ultralytics/yolov5", "yolov5n", pretrained=True)
-    cap = cv2.VideoCapture("carros.mp4")
+    cap = cv2.VideoCapture("rtsp://prueba:prueba@100.72.107.18:554/Streaming/Channels/101")
     
     start_time = time.time()
     
@@ -45,7 +45,7 @@ def detector():
         
         # Filtrar detecciones con confianza mayor o igual a 0.5
         df = pred.pandas().xyxy[0]
-        df = df[df["confidence"] >= 0.5]
+        df = df[df["confidence"] >= 0.3]
         
         # Mostrar número de nuevas detecciones
         num_new_detections = df.shape[0]
